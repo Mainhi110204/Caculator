@@ -88,13 +88,7 @@
             // 
             // btnCong
             // 
-            btnCong.Location = new Point(333, 380);
-            btnCong.Name = "btnCong";
-            btnCong.Size = new Size(80, 46);
-            btnCong.TabIndex = 6;
-            btnCong.Text = "Cộng";
-            btnCong.UseVisualStyleBackColor = true;
-            btnCong.Click += btnCong_Click;
+
             // 
             // btnTru
             // 
@@ -105,12 +99,21 @@
             btnTru.Text = "Trừ";
             btnTru.UseVisualStyleBackColor = true;
             btnTru.Click += btnTru_Click;
+
+            btnCong.Location = new Point(263, 380);
+            btnCong.Name = "btnCong";
+            btnCong.Size = new Size(150, 46);
+            btnCong.TabIndex = 6;
+            btnCong.Text = "Cộng";
+            btnCong.UseVisualStyleBackColor = true;
+            btnCong.Click += button1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(488, 482);
+
             Controls.Add(btnTru);
             Controls.Add(btnCong);
             Controls.Add(txtKetQua);
@@ -135,5 +138,6 @@
         private TextBox txtKetQua;
         private Button btnCong;
         private Button btnTru;
+
     }
 }

@@ -22,7 +22,7 @@ a - b;
 double.Parse(txtA.Text); double b =
 double.Parse(txtB.Text); double c =
 a + b;
-            txtKetQua.Text = c.ToString();  
+            txtKetQua.Text = c.ToString();
         }
     }
 }
