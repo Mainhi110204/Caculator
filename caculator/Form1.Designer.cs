@@ -31,10 +31,10 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            button1 = new Button();
+            txtA = new TextBox();
+            txtB = new TextBox();
+            txtKetQua = new TextBox();
+            btnCong = new Button();
             SuspendLayout();
             // 
             // label1
@@ -64,45 +64,46 @@
             label3.TabIndex = 2;
             label3.Text = "Kết quả";
             // 
-            // textBox1
+            // txtA
             // 
-            textBox1.Location = new Point(213, 59);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(200, 39);
-            textBox1.TabIndex = 3;
+            txtA.Location = new Point(213, 59);
+            txtA.Name = "txtA";
+            txtA.Size = new Size(200, 39);
+            txtA.TabIndex = 3;
             // 
-            // textBox2
+            // txtB
             // 
-            textBox2.Location = new Point(213, 168);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(200, 39);
-            textBox2.TabIndex = 4;
+            txtB.Location = new Point(213, 168);
+            txtB.Name = "txtB";
+            txtB.Size = new Size(200, 39);
+            txtB.TabIndex = 4;
             // 
-            // textBox3
+            // txtKetQua
             // 
-            textBox3.Location = new Point(213, 282);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(200, 39);
-            textBox3.TabIndex = 5;
+            txtKetQua.Location = new Point(213, 282);
+            txtKetQua.Name = "txtKetQua";
+            txtKetQua.Size = new Size(200, 39);
+            txtKetQua.TabIndex = 5;
             // 
-            // button1
+            // btnCong
             // 
-            button1.Location = new Point(263, 380);
-            button1.Name = "button1";
-            button1.Size = new Size(150, 46);
-            button1.TabIndex = 6;
-            button1.Text = "Cộng";
-            button1.UseVisualStyleBackColor = true;
+            btnCong.Location = new Point(263, 380);
+            btnCong.Name = "btnCong";
+            btnCong.Size = new Size(150, 46);
+            btnCong.TabIndex = 6;
+            btnCong.Text = "Cộng";
+            btnCong.UseVisualStyleBackColor = true;
+            btnCong.Click += button1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(488, 482);
-            Controls.Add(button1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnCong);
+            Controls.Add(txtKetQua);
+            Controls.Add(txtB);
+            Controls.Add(txtA);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -117,9 +118,9 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private Button button1;
+        private TextBox txtA;
+        private TextBox txtB;
+        private TextBox txtKetQua;
+        private Button btnCong;
     }
 }
